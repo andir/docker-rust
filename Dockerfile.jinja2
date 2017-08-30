@@ -23,6 +23,7 @@ RUN set -eux; \
         libtool \
         curl \
         ca-certificates \
+        liblzma-dev \
         pkg-config \
         ; \
         rm -rf /var/lib/apt/lists/*; \
