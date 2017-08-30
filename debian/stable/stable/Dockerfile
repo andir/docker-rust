@@ -31,3 +31,5 @@ RUN     curl https://sh.rustup.rs -sSf | sh -s -- -y --default-toolchain ${RUSTU
         rustup --version; \
         cargo --version; \
         rustc --version;
+
+RUN     cargo install --force rustfmt;
