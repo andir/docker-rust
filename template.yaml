@@ -14,6 +14,12 @@ instances:
   - debian-stable-nightly:
       release: stable
       toolchain: nightly
+  - debian-stretch-stretch:
+      release: stretch
+      toolchain: stable
+  - debian-stretch-nightly:
+      release: stretch
+      toolchain: nightly
   - debian-jessie-stable:
       release: jessie
       toolchain: stable
