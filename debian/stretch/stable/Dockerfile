@@ -1,5 +1,5 @@
-MAINTAINER andreas@rammhold.de
 FROM debian:stretch
+MAINTAINER andreas@rammhold.de
 
 ENV RUSTUP_TOOLCHAIN="stable"
 
