@@ -27,7 +27,7 @@ RUN set -eux; \
         rm -rf /var/lib/apt/lists/*; \
         rm -rf /var/cache/apt/archive/*.deb;
 
-RUN     curl https://sh.rustup.rs -sSf | sh -s -- -y --default-toolchain ${RUSTUP_TOOLCHAIN} \
+RUN     curl https://sh.rustup.rs -sSf | sh -s -- -y --default-toolchain ${RUSTUP_TOOLCHAIN}; \
         rustup --version; \
         cargo --version; \
         rustc --version;
