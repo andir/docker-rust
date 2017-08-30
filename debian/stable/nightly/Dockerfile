@@ -23,6 +23,7 @@ RUN set -eux; \
         libtool \
         curl \
         ca-certificates \
+        pkg-config \
         ; \
         rm -rf /var/lib/apt/lists/*; \
         rm -rf /var/cache/apt/archive/*.deb;
