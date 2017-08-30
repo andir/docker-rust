@@ -1,7 +1,10 @@
 FROM debian:stable
 MAINTAINER andreas@rammhold.de
 
-ENV RUSTUP_TOOLCHAIN="stable"
+ENV RUSTUP_TOOLCHAIN="stable" \
+    RUSTUP_HOME=/usr/local/rustup \
+    CARGO_HOME=/usr/local/cargo \
+    PATH=/usr/local/cargo/bin:$PATH
 
 # Install required debian packages
 RUN set -eux; \
@@ -24,4 +27,7 @@ RUN set -eux; \
         rm -rf /var/lib/apt/lists/*; \
         rm -rf /var/cache/apt/archive/*.deb;
 
-RUN     curl https://sh.rustup.rs -sSf | sh -s -- -y --default-toolchain ${RUSTUP_TOOLCHAIN}
+RUN     curl https://sh.rustup.rs -sSf | sh -s -- -y --default-toolchain ${RUSTUP_TOOLCHAIN} \
+        rustup --version; \
+        cargo --version; \
+        rustc --version;
