@@ -1,4 +1,5 @@
-FROM debian:jessie
+MAINTAINER andreas@rammhold.de
+FROM debian:stable
 
 ENV RUSTUP_TOOLCHAIN="stable"
 

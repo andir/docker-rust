@@ -1,0 +1,22 @@
+---
+templates:
+  '{{ distribution }}/{{ release }}/{{ toolchain }}/Dockerfile': Dockerfile.jinja2
+
+defaults:
+  distribution: debian
+  release: latest
+  toolchain: nightly
+
+instances:
+  - debian-stable-stable:
+      release: stable
+      toolchain: stable
+  - debian-stable-nightly:
+      release: stable
+      toolchain: nightly
+  - debian-jessie-stable:
+      release: jessie
+      toolchain: stable
+  - debian-jessie-nightly:
+      release: jessie
+      toolchain: nightly
