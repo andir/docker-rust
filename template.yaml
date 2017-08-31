@@ -26,3 +26,11 @@ instances:
   - debian-jessie-nightly:
       release: jessie
       toolchain: nightly
+  - ubuntu-14.04-stable:
+      distribution: ubuntu
+      release: 14.04
+      toolchain: stable
+  - ubuntu-16.04-stable:
+      distribution: ubuntu
+      release: 16.04
+      toolchain: stable
