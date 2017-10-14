@@ -26,8 +26,7 @@ RUN set -eux; \
         liblzma-dev \
         pkg-config \
         ; \
-        rm -rf /var/lib/apt/lists/*; \
-        rm -rf /var/cache/apt/archive/*.deb;
+        rm -rf /var/lib/apt/lists/*;
 
 RUN     curl https://sh.rustup.rs -sSf | sh -s -- -y --default-toolchain ${RUSTUP_TOOLCHAIN}; \
         rustup --version; \
