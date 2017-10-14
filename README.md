@@ -8,7 +8,7 @@ Workflow
 
 - Change `template.yaml`
 - run `make`
-- git add debian/
+- git add debian/ ubuntu/
 - git commit -S
 - git push
 
