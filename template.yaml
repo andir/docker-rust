@@ -34,3 +34,7 @@ instances:
       distribution: ubuntu
       release: 16.04
       toolchain: stable
+  - ubuntu-18.04-stable:
+      distribution: ubuntu
+      release: 18.04
+      toolchain: stable
