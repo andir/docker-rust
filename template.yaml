@@ -26,6 +26,12 @@ instances:
   - debian-jessie-nightly:
       release: jessie
       toolchain: nightly
+  - debian-buster-stable:
+      release: buster
+      toolchain: stable
+  - debian-buster-nightly:
+      release: buster
+      toolchain: nightly
   - ubuntu-14.04-stable:
       distribution: ubuntu
       release: 14.04
